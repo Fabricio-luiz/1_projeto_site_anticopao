@@ -1,0 +1,164 @@
+* { /*RESET - inserir nossa própria regra de estilo*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+header {
+    font-family: 'Cinzel Decorative', cursive; /*informamação retirada do site do google.fonts*/
+    font-weight: bold; /*peso da fonte, negrito, italico...etc*/
+    font-size: 25px;
+}
+
+section h2,
+section h3,
+form button {
+    font-family: 'Klee One', cursive; /*informamação retirada do site do google.fonts*/
+    font-weight: bold; /*peso da fonte, negrito, italico...etc*/
+}
+
+body, input, textarea {
+    font-family: 'Klee One', cursive; /*informamação retirada do site do google.fonts*/
+}
+
+header { /*cabeçalho*/
+    padding: 16px 0;
+    background-color: #613e2a;
+    color: #f5ecdb;
+}
+
+body {
+    background-color: #f5ecdb;
+}
+
+header nav li { /*links do cabeçalho*/
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+    font-family: 'Klee One', cursive;
+}
+
+header nav li a { /*cor do link do cabeçalho*/
+    color: #f5ecdb;
+    text-decoration: none; /*remove o underline dos links*/
+}
+
+.container { /*Vamos estilizar o contanier, informando a largura maxima do conteudo*/
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container { /*deixar os blocos um ao lado do outro*/
+    display: flex;
+    align-items: center; /*centralizar na vertical*/
+    justify-content: space-between; /*jogar o menu para extrema direita*/
+}
+
+section .container { /*Metodo cascata, aproveitar uma regra e alterar apenas o que necessita*/
+    align-items: flex-start; /*deixar no topo*/
+}   
+
+.brands-list img { /*regra para dimencionar as imagens*/
+    height: 50px;
+}
+
+.brands-list li { /*deixar os links um ao lado do outro*/
+    display: inline;
+    margin-right: 20px;
+}
+
+section { /*espaçamento na parte superior/inferior e laterais*/
+    padding: 24px 0; 
+}
+
+section h2 { /*margem no titulo da seção*/
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+section {
+    color: #613e2a;
+}
+
+section p { /*margem do paragrafo*/
+    margin-bottom: 15px;
+    text-align: justify; /*justificar texto*/
+}
+
+.store-front { /*margem na imagem da fachada da loja*/
+    margin-right: 15px;
+}
+
+.social-links img {
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none; /*retira o . (underline) dos links*/
+}
+
+#contact .container {
+    display: block;
+}
+
+#contact .container img {
+    height: 24px;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+    font-size: 15px;
+}
+
+form textarea {
+    resize: none; /* oculta o redimencionamento manual do campo*/
+    height: 180px;
+}
+
+section h3 {
+    margin-bottom: 16px;
+    font-size: 18px;
+}
+
+form button {
+    background-color: #613e2a;
+    color: #f5ecdb;
+    font-size: 15px;
+    border: none; /*remove o contorno do botão*/
+    cursor: pointer; /*altera o cursor indicando que o elemento é clicável*/
+}
+
+form button:hover { /*mouse over usamos o pseudo-seletor "hover"*/
+    background-color: #613e2a;
+    color: #ffe600;
+}
+
+input:focus, textarea:focus { /*pseudo-seletor "focus" para editat o outline (borda do campo)*/
+    outline-color: #613e2a;
+}
+
+footer {
+    background-color: #613e2a;
+    color: #ecf0f1;
+    padding: 16px 0;
+    text-align: center;
+    font-size: 12px;
+}
